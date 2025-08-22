@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sejarah Yunani Kuno</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fdf5e6; 
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #121212;
+    }
+    header, footer {
+      background: #003366
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: white;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 20px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sejarah Yunani Kuno</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Pendahuluan</h2>
+      <p>Yunani kuno adalah salah satu peradaban terbesar dalam sejarah manusia. Mereka dikenal sebagai pelopor dalam bidang filsafat, politik, seni, dan ilmu pengetahuan. Peradaban ini tumbuh di wilayah sekitar Laut Aegea sejak abad ke-8 SM hingga akhirnya dikuasai oleh Romawi.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Parthenon_from_west.jpg" alt="Parthenon Yunani" />
+    </div>
+
+    <div class="card">
+      <h2>Kota-Kota Negara (Polis)</h2>
+      <p>Salah satu ciri khas Yunani kuno adalah sistem <i>polis</i> atau negara kota. Dua polis yang paling terkenal adalah Athena dan Sparta. Athena dikenal sebagai pusat demokrasi dan filsafat, sementara Sparta terkenal dengan kekuatan militernya yang disiplin.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/View_of_the_Acropolis_Athens_%28pixinn.net%29.jpg" alt="Acropolis Athena" />
+    </div>
+
+    <div class="card">
+      <h2>Filsafat dan Ilmu Pengetahuan</h2>
+      <p>Tokoh-tokoh besar seperti Socrates, Plato, dan Aristoteles lahir di Yunani. Pemikiran mereka menjadi dasar dari filsafat Barat, etika, logika, dan ilmu pengetahuan yang kita pelajari sampai sekarang.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Plato_Pio-Clemetino_Inv305.jpg" alt="Patung Plato" />
+    </div>
+
+    <div class="card">
+      <h2>Kebudayaan dan Olahraga</h2>
+      <p>Selain filsafat, Yunani juga terkenal dengan seni patung, arsitektur megah seperti Parthenon, serta perayaan olahraga seperti Olimpiade kuno yang pertama kali diadakan di Olympia pada tahun 776 SM.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/AncientOlympia.jpg" alt="Reruntuhan Olympia Yunani" />
+    </div>
+
+    <div class="card">
+      <h2>Penutup</h2>
+      <p>Warisan Yunani kuno masih hidup hingga kini. Demokrasi, ilmu pengetahuan, seni, dan filsafat yang mereka kembangkan menjadi fondasi penting bagi dunia modern. Sejarah Yunani bukan hanya milik masa lalu, tetapi juga menjadi inspirasi bagi masa depan.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Belajar HTML , Nayla Majid - Sejarah Yunani</p>
+  </footer>
+</body>
+</html>
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fdf5e6;
+      font-family: 'Poppins', Arial, sans-serif;
+      line-height: 1.6;
+      color: #211;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* header & footer */
+    header, footer {
+      background: linear-gradient(135deg, #0066cc, #003366);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #003366;
+      transition: color 0.3s ease;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 20px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    /* animasi muncul */
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.6s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    /* Tombol Back to Top */
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background: #0066cc;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: background 0.3s ease;
+    }
+    #backToTop:hover {
+      background: #004c99;
+    }
+
+    /* Dark mode */
+    body.dark {
+      background-color: #121212;
+      color: #eee;
+    }
+    body.dark .card {
+      background: #1e1e1e;
+      color: #eee;
+    }
+    body.dark h1, body.dark h2 {
+      color: #66aaff;
+    }
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: white;
+      border: none;
+      border-radius: 20px;
+      padding: 5px 15px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+    .dark-toggle:hover {
+      background: #ddd;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    
+    
+    <button class="dark-toggle" onclick="toggleDark()">🌙 Dark Mode</button>
+  </header>
+
+
+  </main>
+
+  <footer>
+    
+  
+
+  <button id="backToTop" onclick="scrollToTop()">⬆</button>
+
+  <script>
+    // Back to Top Button
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+
+      // animasi muncul card
+      document.querySelectorAll('.card').forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        if(cardTop < window.innerHeight - 50){
+          card.classList.add('show');
+        }
+      });
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Dark Mode Toggle
+    function toggleDark(){
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
+
+<section>
+
+
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sejarah Yunani Kuno</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header h3 {
+      margin: 8px 0 0 0;
+      font-size: 18px;
+      font-weight: normal;
+      color: #ffcc00; /* warna emas */
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+  
+    <h3>Nayla Majid , X - BR , SMK 22, JAKARTA</h3>
+  </header>
+
+  <main>
+    
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sejarah Yunani Kuno</p>
+  </footer>
+
+</body>
+</html> 
+
+<style>
+  h1 {
+    text-align: center;
+    color: white;
+  }
+</style>
+
+
+
+
